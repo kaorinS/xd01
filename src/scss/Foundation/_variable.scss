@@ -1,0 +1,39 @@
+// ==============================
+// 変数
+// ==============================
+// ブレイクポイント
+$breakepoints: (
+    'md': 'print, screen and (min-width: 560px)',
+    'lg': 'print, screen and (min-width: 960px)'
+) !default;
+
+// 色
+$color-main: #fff;
+$color-sub:  #1b1310;
+
+// フォントカラー
+$font-color-default: #141414;
+$font-color-top: $color-main;
+
+// フォントサイズ
+$font-size-title: 36px;
+$font-size-content-head-lg: 24px;
+
+// フォントファミリー
+$fontFamily-default: 'Roboto', 'Noto Sans JP', sans-serif;
+$font-robot: "Roboto", sans-serif;
+$font-notoSansJp: 'Noto Sans JP', sans-serif;
+
+// 余白
+$space-content: 100px;
+$space-content-lg: 150px;
+$space-title-to-item: 75px;
+
+// header高さ
+$header-height: 75px;
+
+// width
+$main-width-lg: 1030px;
+
+// hamburger
+$ham-btn-size: 40px;

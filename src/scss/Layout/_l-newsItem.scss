@@ -1,0 +1,26 @@
+.newsItem{
+    box-shadow: 0 0 6px rgba(27, 19, 16, 0.4);
+    @include mq() {
+        width: 31%;
+    }
+    & + & {
+        margin-top: 50px;
+        @include mq() {
+            margin: 0;
+        }
+    }
+    &__img{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 500px;
+    }
+    &__body{
+        padding: 2.6rem 3.3rem;
+        font-family: $fontFamily-default;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        line-height: 2;
+        @include lhCrop(2, 0.75);
+    }
+}

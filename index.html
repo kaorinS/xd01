@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ポートフォリオ[クリ★スタ] </title>
+    <link rel="stylesheet" href="./public/css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrap">
+            <div class="header__wrapTitle">
+                <h1 class="header__title"><a href="#top" class="header__index">クリ★スタ</a></h1>
+            </div>
+            <div class="hamburger">
+                <button type="button" class="hamburger__btn js-toggle-menu" aria-label="メニュー開閉ボタン" aria-controls="gNav"
+                    aria-expanded="false">
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+            <nav id="gNav" class="globalNav js-toggle-target">
+                <ul class="gNavList">
+                    <li class="gNavList__item"><a href="#about" class="gNavList__link js-close-modal">About</a></li>
+                    <li class="gNavList__item"><a href="#service" class="gNavList__link js-close-modal">Service</a></li>
+                    <li class="gNavList__item"><a href="#news" class="gNavList__link js-close-modal">News</a></li>
+                    <li class="gNavList__item"><a href="#contact" class="gNavList__link js-close-modal">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main js-main">
+        <section id="top" class="hero">
+            <div class="hero__wrap-title">
+                <h2 class="hero__title">Cresta Design.</h2>
+            </div>
+        </section>
+
+        <div class="main__wrap">
+            <div class="main__wrap-content">
+                <section id="about" class="about">
+                    <h2 class="about__title">About</h2>
+                    <div class="aboutContent">
+                        <p class="aboutContent__head">ミニマルで<br>洗練されたデザインを</p>
+                        <p class="aboutContent__body">
+                            近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。
+                        </p>
+                    </div>
+                </section>
+
+                <section id="service" class="service">
+                    <h2 class="service__title">Service</h2>
+                    <div class="service__body">
+                        <div class="serviceItem">
+                            <div class="serviceItem__wrap">
+                                <p class="serviceItem__head">リリース時のサポートで<br>サービスのブランディングを</p>
+                                <p class="serviceItem__body">
+                                    弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。
+                                </p>
+                            </div>
+                            <p class="serviceItem__wrap-img">
+                                <img src="./img/service-image@2x.jpg" alt="" class="serviceItem__img">
+                            </p>
+                        </div>
+                        <div class="serviceItem">
+                            <div class="serviceItem__wrap">
+                                <p class="serviceItem__head">リリース後のサポートで<br>効果を最大化させる</p>
+                                <p class="serviceItem__body">
+                                    弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。
+                                </p>
+                            </div>
+                            <p class="serviceItem__wrap-img">
+                                <img src="./img/service-image02@2x.jpg" alt="" class="serviceItem__img">
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="news" class="news">
+                    <h2 class="news__title">News</h2>
+                    <div class="news__body">
+                        <div class="newsItem">
+                            <p class="newsItem__wrap-img">
+                                <img src="./img/card-image1@2x.jpg" alt="" class="newsItem__img">
+                            </p>
+                            <p class="newsItem__body">
+                                新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+                            </p>
+                        </div>
+                        <div class="newsItem">
+                            <p class="newsItem__wrap-img"><img src="./img/card-image2@2x.jpg" alt=""
+                                    class="newsItem__img">
+                            </p>
+                            <p class="newsItem__body">
+                                新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+                            </p>
+                        </div>
+                        <div class="newsItem">
+                            <p class="newsItem__wrap-img">
+                                <img src="./img/card-image3@2x.jpg" alt="" class="newsItem__img">
+                            </p>
+                            <p class="newsItem__body">
+                                新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="contact">
+                    <h2 class="contact__title">お問い合わせ</h2>
+                    <div class="contact__wrap-form">
+                        <form class="contactForm">
+                            <p class="contactForm__wrap">
+                                <label>
+                                    <span class="contactForm__text">担当者名</span><br>
+                                    <input type="text" name="name" class="contactForm__input-text">
+                                </label>
+                            </p>
+                            <p class="contactForm__wrap">
+                                <label>
+                                    <span class="contactForm__text">電話番号</span><br>
+                                    <input type="number" name="tel" class="contactForm__input-text">
+                                </label>
+                            </p>
+                            <p class="contactForm__wrap">
+                                <label>
+                                    <span class="contactForm__text">メールアドレス</span><br>
+                                    <input type="text" name="mail" class="contactForm__input-text">
+                                </label>
+                            </p>
+                            <p class="contactForm__wrap">
+                                <label>
+                                    <span class="contactForm__text">お問い合わせ内容</span><br>
+                                    <textarea name="content" cols="30" rows="10"
+                                        class="contactForm__textarea"></textarea>
+                                </label>
+                            </p>
+                            <button type="submit" name="submit" class="contactForm__submit">送信</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">
+            ©︎crest.design all rights reserved
+        </p>
+    </footer>
+    <script src="./public/js/app.min.js"></script>
+</body>
+
+</html>

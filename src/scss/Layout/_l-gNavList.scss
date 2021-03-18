@@ -1,0 +1,37 @@
+.gNavList {
+    font-family: $fontFamily-default;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    &__item {
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        line-height: 1.4375;
+        & + & {
+            margin-top: 50px;
+        }
+    }
+    &__link {
+        display: block;
+        width: 100%;
+    }
+    @include mq(lg) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        &__item {
+            & + & {
+                margin-top: 0;
+                margin-left: 5.3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.contactForm{
+    font-family: $fontFamily-default;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    margin-top: $space-title-to-item;
+    &__wrap{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 400px;
+        @include mq() {
+            max-width: 70%;
+        }
+        & + &{
+            margin-top: 2.5rem;
+        }
+    }
+    &__input-text,
+    &__textarea{
+        width: 100%;
+    }
+    &__submit{
+        background: $color-sub;
+        border-radius: 50px;
+        border-style: none;
+        box-shadow: 0 0 6px $color-sub;
+        color: $font-color-top;
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 0 97px;
+    }
+}

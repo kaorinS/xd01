@@ -1,0 +1,16 @@
+.footer{
+    color: $color-main;
+    background: $color-sub;
+    height: 60px;
+    position: relative;
+    &__text{
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}

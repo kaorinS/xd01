@@ -1,0 +1,9 @@
+.aboutContent{
+    margin-top: $space-title-to-item;
+    &__head{
+        @extend %itemHead;
+    }
+    &__body{
+        @extend %itemBody;
+    }
+}

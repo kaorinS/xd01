@@ -1,0 +1,15 @@
+@mixin lhCrop($line-height, $capital-letter: 1) {
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+  }
+  &::before{
+    margin-top: calc((#{$capital-letter} - #{$line-height}) * 0.5em);
+  }
+  &::after{
+    margin-bottom: calc((#{$capital-letter} - #{$line-height}) * 0.5em);
+  }
+}

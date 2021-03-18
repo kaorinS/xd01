@@ -1,0 +1,58 @@
+.hamburger {
+    @include mq(lg) {
+        display: none;
+    }
+    &__btn {
+        appearance: none;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        height: $ham-btn-size;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        text-decoration: none;
+        transition: transform .3s ease-in-out, background-color .3s ease-in-out, top .3s ease-in-out;
+        width: $ham-btn-size;
+        z-index: 10;
+        &[aria-expanded="true"]{
+            & .hamburger__line{
+            background: transparent;
+            }
+            & .hamburger__line::before,
+            & .hamburger__line::after{
+                top: 0;
+            }
+            & .hamburger__line::before{
+                transform: rotate(45deg);
+            }
+            & .hamburger__line::after{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    &__line,
+    &__line::before,
+    &__line::after{
+        background: $color-main;
+        content: '';
+        height: 2px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: inherit;
+        width: 25px;
+        z-index: 10;
+    }
+    &__line::before{
+        top: -16px;
+    }
+    &__line::after{
+        top: 16px;
+    }
+}

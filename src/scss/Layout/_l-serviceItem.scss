@@ -1,0 +1,43 @@
+.serviceItem{
+    margin-top: $space-title-to-item;
+    @include mq() {
+        display: flex;
+        justify-content: space-between;
+        &:nth-of-type(2n+1) {
+            flex-direction: row-reverse;
+        }
+        &:nth-of-type(2n+1) > &__wrap {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    & + &{
+        margin-top: 55px;
+        @include mq() {
+            margin-top: 50px;
+        }
+    }
+    &__wrap{
+        @include mq() {
+            width: 46.5%;
+        }
+    }
+    &__head{
+        @extend %itemHead;
+    }
+    &__body{
+        @extend %itemBody;
+    }
+    &__wrap-img{
+        margin-top: 40px;
+        @include mq() {
+            margin: 0;
+            width: 46.5%
+        }
+    }
+    &__img{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 500px;
+    }
+}

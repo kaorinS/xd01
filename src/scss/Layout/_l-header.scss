@@ -1,0 +1,29 @@
+.header {
+  background: $color-sub;
+  border-bottom: 2px solid $color-main;
+  color: $font-color-top;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-height;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  @media print{
+    position: relative;
+  }
+  &__wrap{
+    margin: 0 15px;
+    position: relative;
+    width: 100%;
+    @include mq() {
+      margin: 0 8.3vw;
+    }
+  }
+  &__title {
+    font-size: 26px;
+    font-family: $fontFamily-default;
+    line-height: 1;
+  }
+}

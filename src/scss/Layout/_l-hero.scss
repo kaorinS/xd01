@@ -1,0 +1,45 @@
+.hero{
+    position: relative;
+    height: calc(100vh - #{$header-height});
+    &::before{
+        background: url('../../img/fv-bgi_sp@2x.jpg') no-repeat center;
+        background-size: cover;
+        content: "";
+        display: block;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        @include mq() {
+            background-image: url('../../img/fv-bgi@2x.jpg');
+        }
+    }
+    &__wrap-title{
+        border: 2px solid $color-main;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        @include mq() {
+            width: 450px;
+            height: 136px;
+        }
+    }
+    &__title{
+        color: $font-color-top;
+        font-family: $fontFamily-default;
+        font-size: 30px;
+        letter-spacing: 0.05em;
+        line-height: 1;
+        @include mq() {
+            font-size: 50px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+%itemBody {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 2;
+  margin-top: 34px;
+  @include lhCrop(2, 0.75);
+  @include mq() {
+    margin-top: 45px;
+  }
+}

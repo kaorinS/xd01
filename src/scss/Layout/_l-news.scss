@@ -1,0 +1,12 @@
+.news{
+    margin-top: $space-title-to-item;
+    &__title{
+        @extend %contentTitle;
+    }
+    &__body{
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
